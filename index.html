@@ -2,17 +2,38 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>aline博客</title>
+	<title>艾艾博客</title>
 	<link rel="stylesheet" href="style.css">
 	<style>
-	    .section{ text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+	    .section{ 
+	    	text-align: center; font: 50px "Microsoft Yahei";
+		    background: url("bg.png") repeat 0 0 #F0F0F0;
+		    display: flex;
+		    align-items: center;
+		    justify-content: center;
+		}
+		.borer-radius{
+			width: 400px;
+			height: 400px;
+			border-radius: 50%;
+			overflow: hidden;
+			background: url("https://avatars3.githubusercontent.com/u/18344991?s=460&v=4") bottom no-repeat;
+			background-size: 110%;
+
+		}
+		.fp-tableCell{
+			display: flex;
+		    align-items: center;
+		    justify-content: center;
+		    flex-direction:column;
+		}
 	</style>
 	<script src="http://cdn.staticfile.org/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://cdn.dowebok.com/77/js/jquery.fullPage.min.js"></script>
 	<script>
 		$(function(){
 			$('#dowebok').fullpage({
-				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
+				//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90'],
 				'navigation': true,
 			});
 		});
@@ -21,20 +42,20 @@
 <body>
 	<div id="dowebok">
 		<div class="section">
-			<h3>第一屏</h3>
-			<p>fullPage.js — 项目导航演示</p>
+			<div class="borer-radius"></div>
+			<h3>扶苏公子</h3>
 		</div>
 		<div class="section">
-			<h3>第二屏</h3>
-			<p>请查看右边的圆圈</p>
+			<h3>爱情宣言</h3>
+			<p>弱水三千，只取一瓢</p>
 		</div>
 		<div class="section">
-			<h3>第三屏</h3>
-			<p>圆圈还可以设置位置，颜色，加上 tip，点击可以控制</p>
+			<h3>诗经．邶风</h3>
+			<p>死生契阔，与子成说。执子之手，与子偕老。</p>
 		</div>
 		<div class="section">
-			<h3>第四屏</h3>
-			<p>这是最后一屏</p>
+			<h3>一棵开花的树</h3>
+			<p>如何让你遇见我，在我最美丽的时刻为这，我已在佛前求了五百年，<br><br>求他让我们结一段尘缘。</p>
 		</div>
 	</div>
 
